@@ -2,22 +2,71 @@
 1. подключить файл сброса тилей - он будет первым
 2. все остальные писать в этом файле
 */
+@import url(normalize.css);
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: Montserrat, Arial, sans-serif;
   font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  height: 100vh;
 
+}
 
-body {}
+.container {
+  max-width: 1440px;
+  height: 100%;
+  border: 1px solid yellow;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero {
+  background-image: url('/image/columns.jpg');
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+header {
+  height: 25px;
+  padding: 24px 70px;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.16);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 28px;
+  text-decoration: none;
+}
+
+a {
+  color: rgba(177, 177, 177, 1);
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
+
+.active {
+  color: rgba(227, 195, 122, 1);
+  padding-bottom: 30px;
+  border-bottom: 2px solid  rgba(227, 195, 122, 1);
+
+}
+
+.number {
+  color: rgba(227, 195, 122, 1);
+}
 

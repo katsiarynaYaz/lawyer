@@ -23,8 +23,18 @@ html {
  * Remove the margin in all browsers.
  */
 
-body {
+body,
+ul,
+ol,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   margin: 0;
+  padding: 0;
 }
 
 /**
@@ -42,7 +52,6 @@ main {
 
 h1 {
   font-size: 2em;
-  margin: 0.67em 0;
 }
 
 /* Grouping content
@@ -177,7 +186,8 @@ textarea {
  */
 
 button,
-input { /* 1 */
+input {
+  /* 1 */
   overflow: visible;
 }
 
@@ -187,7 +197,8 @@ input { /* 1 */
  */
 
 button,
-select { /* 1 */
+select {
+  /* 1 */
   text-transform: none;
 }
 
@@ -349,4 +360,8 @@ template {
 
 [hidden] {
   display: none;
+}
+
+ul {
+  margin: 0;
 }
