@@ -354,14 +354,7 @@ template {
   display: none;
 }
 
-/**
- * Add the correct display in IE 10.
- */
-
-[hidden] {
-  display: none;
-}
-
-ul {
+ul,ol {
   margin: 0;
+  list-style: none;
 }

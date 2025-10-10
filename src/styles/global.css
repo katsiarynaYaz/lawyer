@@ -17,56 +17,42 @@ body {
 .container {
   max-width: 1440px;
   height: 100%;
-  border: 1px solid yellow;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
 }
 
 .hero {
-  background-image: url('columns.jpg');
+  background-image: url("/columns.jpg");
   background-repeat: no-repeat;
   height: 100%;
 }
 
 header {
-  height: 25px;
   padding: 24px 70px;
   border-bottom: 1px solid rgba(177, 177, 177, 0.16);
 
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
 }
 
 nav ul {
-  list-style: none;
   display: flex;
-  flex-direction: row;
   justify-content: space-between;
   gap: 28px;
-  text-decoration: none;
 }
 
-a {
+header a {
   color: rgba(177, 177, 177, 1);
-}
-
-a:link,
-a:visited,
-a:hover,
-a:active,
-a:focus {
   text-decoration: none;
 }
 
-.active {
+header a:hover {
   color: rgba(227, 195, 122, 1);
-  padding-bottom: 30px;
+  padding-bottom: 28px;
   border-bottom: 2px solid  rgba(227, 195, 122, 1);
 
 }
 
-.number {
+.phone {
   color: rgba(227, 195, 122, 1);
 }
 
