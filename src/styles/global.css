@@ -2,22 +2,57 @@
 1. подключить файл сброса тилей - он будет первым
 2. все остальные писать в этом файле
 */
+@import url(normalize.css);
 
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
+  font-family: Montserrat, Arial, sans-serif;
   font-weight: 400;
-
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
-
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
+body {
+  height: 100vh;
 
+}
 
-body {}
+.container {
+  max-width: 1440px;
+  height: 100%;
+  margin-inline: auto;
+}
+
+.hero {
+  background-image: url("/columns.jpg");
+  background-repeat: no-repeat;
+  height: 100%;
+}
+
+header {
+  padding: 24px 70px;
+  border-bottom: 1px solid rgba(177, 177, 177, 0.16);
+
+  display: flex;
+  justify-content: space-between;
+}
+
+nav ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 28px;
+}
+
+header a {
+  color: rgba(177, 177, 177, 1);
+  text-decoration: none;
+}
+
+header a:hover {
+  color: rgba(227, 195, 122, 1);
+  padding-bottom: 28px;
+  border-bottom: 2px solid  rgba(227, 195, 122, 1);
+
+}
+
+.phone {
+  color: rgba(227, 195, 122, 1);
+}
 
