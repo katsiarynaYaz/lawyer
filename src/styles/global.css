@@ -23,7 +23,7 @@ body {
 }
 
 .hero {
-  background-image: url('/image/columns.jpg');
+  background-image: url('columns.jpg');
   background-repeat: no-repeat;
   height: 100%;
 }
