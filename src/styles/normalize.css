@@ -37,6 +37,14 @@ p {
   padding: 0;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+  font-weight: inherit;
+}
 /**
  * Render the `main` element consistently in IE.
  */
@@ -358,4 +366,8 @@ template {
 ul,ol {
   margin: 0;
   list-style: none;
+}
+
+button {
+  background: transparent;
 }
