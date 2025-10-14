@@ -8,7 +8,9 @@
   font-family: Montserrat, Arial, sans-serif;
   font-weight: 400;
   --white: rgba(255, 255, 255, 1);
-  --text-yellow: rgba(227, 195, 122, 1);
+  --light-yellow: rgba(227, 195, 122, 1);
+  --dark-yellow: rgba(164, 131, 78, 1);
+  --disable-grey: rgba(177, 177, 177, 1);
 }
 
 body {
@@ -51,13 +53,13 @@ header a {
 }
 
 header a:hover {
-  color: var(--text-yellow);
+  color: var(--light-yellow);
   padding-bottom: 28px;
-  border-bottom: 2px solid var(--text-yellow);
+  border-bottom: 2px solid var(--light-yellow);
 }
 
 .phone {
-  color: var(--text-yellow);
+  color: var(--light-yellow);
 }
 
 .content-hero {
@@ -110,7 +112,7 @@ h1 {
 .button-call {
   width: 200px;
   height: 44px;
-  border: 1px solid var(--text-yellow);
+  border: 1px solid var(--light-yellow);
   text-transform: uppercase;
   color: var(--white);
 }
@@ -136,7 +138,7 @@ h1 {
   vertical-align: top;
   font-size: 40px;
   margin-bottom: 16px;
-  color: var(--text-yellow);
+  color: var(--light-yellow);
 
 }
 
