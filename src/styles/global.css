@@ -3,6 +3,7 @@
 2. все остальные писать в этом файле
 */
 @import url(normalize.css);
+@import url(word-of-leader.css);
 
 :root {
   font-family: Montserrat, Arial, sans-serif;
@@ -10,7 +11,7 @@
   --white: rgba(255, 255, 255, 1);
   --light-yellow: rgba(227, 195, 122, 1);
   --dark-yellow: rgba(164, 131, 78, 1);
-  --disable-grey: rgba(177, 177, 177, 1);
+  --muted: rgba(177, 177, 177, 1);
 }
 
 body {
@@ -74,6 +75,7 @@ header a:hover {
 .content-hero hgroup {
   max-width: 650px;
   margin-bottom: 62px;
+  letter-spacing: 0.025em;
 }
 
 h1 {

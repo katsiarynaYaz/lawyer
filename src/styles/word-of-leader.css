@@ -1,7 +1,7 @@
 .words-leader {
   min-height: 590px;
   height: 100%;
-  background-image: url("/wordOfLeader-background.jpg");
+  background-image: url("/leader/background.jpg");
   background-repeat: no-repeat;
   position: relative;
 }
@@ -19,18 +19,26 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  align-items: flex-start;
   position: absolute;
   bottom: 80px;
   right: 300px;
+}
 
-  align-items: flex-start;
+.content-words-leader h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  max-width: 450px;
+  line-height: 52px;
+  margin-bottom: 40px;
+  letter-spacing: 0.025em;
 }
 
 .line-with-text {
   position: relative;
   display: inline-block;
   padding-left: 52px;
-  color: var(--disable-grey);
+  color: var(--muted);
   font-size: 16px;
   font-weight: 300;
   margin-bottom: 32px;
@@ -43,19 +51,11 @@
   left: 0;
   width: 44px;
   height: 0.5px;
-  background-color: var(--disable-grey);
+  background-color: var(--muted);
 }
 
-.matters-color {
+.accent-title {
   color: var(--dark-yellow);
-}
-
-.content-words-leader h2 {
-  text-transform: uppercase;
-  font-size: 40px;
-  max-width: 400px;
-  line-height: 52px;
-  margin-bottom: 40px;
 }
 
 .words {
@@ -64,6 +64,7 @@
   font-size: 16px;
   line-height: 150%;
   margin-bottom: 100px;
+  letter-spacing: 0.02em;
 }
 
 .name-leader {
@@ -75,5 +76,5 @@
 .inscription {
   font-weight: 300;
   font-size: 16px;
-  color: var(--disable-grey);
+  color: var(--muted);
 }
