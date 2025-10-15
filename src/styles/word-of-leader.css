@@ -1,0 +1,80 @@
+.words-leader {
+  min-height: 590px;
+  height: 100%;
+  background-image: url("/leader/background.jpg");
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.leader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  left: 128px;
+}
+
+.content-words-leader {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  position: absolute;
+  bottom: 80px;
+  right: 300px;
+}
+
+.content-words-leader h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  max-width: 450px;
+  line-height: 52px;
+  margin-bottom: 40px;
+  letter-spacing: 0.025em;
+}
+
+.line-with-text {
+  position: relative;
+  display: inline-block;
+  padding-left: 52px;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 32px;
+}
+
+.line-with-text::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 44px;
+  height: 0.5px;
+  background-color: var(--muted);
+}
+
+.accent-title {
+  color: var(--dark-yellow);
+}
+
+.words {
+  max-width: 520px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  margin-bottom: 100px;
+  letter-spacing: 0.02em;
+}
+
+.name-leader {
+  text-transform: uppercase;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+
+.inscription {
+  font-weight: 300;
+  font-size: 16px;
+  color: var(--muted);
+}
