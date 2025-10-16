@@ -4,6 +4,7 @@
 */
 @import url(normalize.css);
 @import url(reusable.css);
+@import url(hero.css);
 @import url(word-of-leader.css);
 @import url(advantages.css);
 
@@ -14,73 +15,12 @@
   --light-yellow: rgba(227, 195, 122, 1);
   --dark-yellow: rgba(164, 131, 78, 1);
   --muted: rgba(177, 177, 177, 1);
-  --cards-border: rgba(217, 217, 217, 1);
+  --card-border: rgba(217, 217, 217, 1);
   --black: rgba(35, 34, 40, 1);
 }
 
 body {
   height: 100vh;
-}
-
-.container {
-  max-width: 1440px;
-  height: 100%;
-  margin-inline: auto;
-}
-
-.hero {
-  position: relative;
-
-  background-image: linear-gradient(rgba(35, 34, 40, 0.91)), url("/columns.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 100%;
-  min-height: 680px;
-}
-
-header {
-  padding: 24px 70px;
-  border-bottom: 1px solid rgba(177, 177, 177, 0.16);
-
-  display: flex;
-  justify-content: space-between;
-}
-
-nav ul {
-  display: flex;
-  justify-content: space-between;
-  gap: 28px;
-}
-
-header a {
-  color: rgba(177, 177, 177, 1);
-  text-decoration: none;
-}
-
-header a:hover:not(.phone) {
-  color: var(--light-yellow);
-  padding-bottom: 28px;
-  border-bottom: 2px solid var(--light-yellow);
-}
-
-.phone {
-  color: var(--light-yellow);
-  cursor: pointer;
-}
-
-.content-hero {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  position: absolute;
-  bottom: 0;
-  left: 70px;
-}
-
-.content-hero hgroup {
-  max-width: 650px;
-  margin-bottom: 62px;
-  letter-spacing: 0.025em;
 }
 
 h1 {
@@ -99,29 +39,10 @@ h2 {
   text-align: center;
 }
 
-.slogan {
-  font-size: 16px;
-  font-weight: 300;
-  color: rgba(177, 177, 177, 1);
-}
-
-.consultation {
-  max-width: 506px;
-  margin-bottom: 74px;
-}
-
-.consultation label {
-  color: var(--white);
-  display: block;
-  padding-bottom: 24px;
-  text-transform: uppercase;
-}
-
-.enter-phone-number {
-  width: 298px;
-  height: 44px;
-  border: none;
-  gap: 8px;
+.container {
+  max-width: 1440px;
+  height: 100%;
+  margin-inline: auto;
 }
 
 .button {
@@ -130,43 +51,4 @@ h2 {
   border: 1px solid var(--light-yellow);
   text-transform: uppercase;
   color: var(--black);
-}
-
-.consultation .button {
-  color: var(--white);
-}
-
-.info-block {
-  display: flex;
-  gap: 2px;
-  height: 144px;
-  width: 910px;
-}
-
-.info-1,
-.info-2,
-.info-3 {
-  background-color: rgba(35, 34, 40, 0.62);
-  width: 100%;
-  padding-left: 32px;
-  align-content: center;
-}
-
-.info-block .numbers {
-  display: inline-block;
-  vertical-align: top;
-  font-size: 40px;
-  margin-bottom: 16px;
-  color: var(--light-yellow);
-}
-
-.info-block p {
-  color: rgba(177, 177, 177, 1);
-  font-weight: 300;
-}
-
-.statue {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }

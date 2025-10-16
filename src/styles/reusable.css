@@ -1,4 +1,4 @@
-.line-with-text {
+.subtitle-with-text {
   position: relative;
   display: inline-block;
   padding-left: 52px;
@@ -9,7 +9,7 @@
   letter-spacing: 0.02em;
 }
 
-.line-with-text::before {
+.subtitle-with-text::before {
   content: "";
   position: absolute;
   top: 10px;
