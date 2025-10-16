@@ -1,0 +1,53 @@
+.line-with-text {
+  position: relative;
+  display: inline-block;
+  padding-left: 52px;
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+}
+
+.line-with-text::before {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: 0;
+  width: 44px;
+  height: 0.5px;
+  background-color: var(--muted);
+}
+
+h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 40px;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+.accent-title {
+  color: var(--dark-yellow);
+}
+
+.muted-text {
+  color: var(--muted);
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 32px;
+  letter-spacing: 0.02em;
+  text-align: center;
+  margin-top: 80px;
+}
+
+
+.button-call {
+  width: 200px;
+  height: 44px;
+  border: 1px solid var(--light-yellow);
+  text-transform: uppercase;
+  color: var(--black);
+  
+}
