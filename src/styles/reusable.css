@@ -19,20 +19,11 @@
   background-color: var(--muted);
 }
 
-h2 {
-  text-transform: uppercase;
-  font-size: 40px;
-  line-height: 52px;
-  margin-bottom: 40px;
-  letter-spacing: 0.025em;
-  text-align: center;
-}
-
 .accent-title {
   color: var(--dark-yellow);
 }
 
-.muted-text {
+.subtitle {
   color: var(--muted);
   font-size: 16px;
   font-weight: 300;
@@ -42,12 +33,3 @@ h2 {
   margin-top: 80px;
 }
 
-
-.button-call {
-  width: 200px;
-  height: 44px;
-  border: 1px solid var(--light-yellow);
-  text-transform: uppercase;
-  color: var(--black);
-  
-}

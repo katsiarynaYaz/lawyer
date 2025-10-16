@@ -3,9 +3,9 @@
 2. все остальные писать в этом файле
 */
 @import url(normalize.css);
+@import url(reusable.css);
 @import url(word-of-leader.css);
 @import url(advantages.css);
-@import url(reusable.css);
 
 :root {
   font-family: Montserrat, Arial, sans-serif;
@@ -14,7 +14,7 @@
   --light-yellow: rgba(227, 195, 122, 1);
   --dark-yellow: rgba(164, 131, 78, 1);
   --muted: rgba(177, 177, 177, 1);
-  --border: rgba(217, 217, 217, 1);
+  --cards-border: rgba(217, 217, 217, 1);
   --black: rgba(35, 34, 40, 1);
 }
 
@@ -88,10 +88,18 @@ h1 {
   text-transform: uppercase;
   color: var(--white);
   margin-bottom: 32px;
-
 }
 
-.subtitle {
+h2 {
+  text-transform: uppercase;
+  font-size: 40px;
+  line-height: 52px;
+  margin-bottom: 40px;
+  letter-spacing: 0.025em;
+  text-align: center;
+}
+
+.slogan {
   font-size: 16px;
   font-weight: 300;
   color: rgba(177, 177, 177, 1);
@@ -116,13 +124,16 @@ h1 {
   gap: 8px;
 }
 
-.tel-button .button-call {
+.button {
   width: 200px;
   height: 44px;
   border: 1px solid var(--light-yellow);
   text-transform: uppercase;
+  color: var(--black);
+}
+
+.consultation .button {
   color: var(--white);
-  cursor: pointer;
 }
 
 .info-block {
@@ -147,7 +158,6 @@ h1 {
   font-size: 40px;
   margin-bottom: 16px;
   color: var(--light-yellow);
-
 }
 
 .info-block p {

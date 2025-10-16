@@ -16,8 +16,8 @@
   align-items: center;
 }
 
-div [class^="advantage-block"] {
-  border: 1px solid var(--border);
+.advantage-block {
+  border: 1px solid var(--cards-border);
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -49,10 +49,8 @@ div [class^="advantage-block"] {
     margin-bottom: 58px;
 }
 
-.advantages-lawyer .button-call {
+.advantages-lawyer .button {
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin-inline: auto;
   margin-top: 58px;
-  cursor: pointer;
 }
