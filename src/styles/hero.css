@@ -16,7 +16,7 @@ header {
   justify-content: space-between;
 }
 
-nav ul {
+header nav ul {
   display: flex;
   justify-content: space-between;
   gap: 28px;
