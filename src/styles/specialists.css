@@ -1,0 +1,46 @@
+.specialists {
+  min-height: 542px;
+  height: 100%;
+
+  display: flex;
+  align-items: center;
+  padding: 80px 0;
+  padding-left: 70px;
+  gap: 64px;
+}
+
+.specialists-abilities {
+  width: 100%;
+  max-width: 510px;
+}
+
+.specialists-our-team {
+  margin-bottom: 40px;
+  padding-top: 26px;
+}
+
+.specialists .words {
+  max-width: 455px;
+  margin-bottom: 40px;
+}
+
+.specialist-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 230px);
+  grid-template-rows: 382px;
+  gap: 20px;
+  overflow-x: auto;
+}
+
+.specialist-card {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.specialist-cards img {
+  background-color: rgba(164, 131, 78, 1);
+  height: 312px;
+  object-fit: none;
+  object-position: bottom;
+}

@@ -2,9 +2,14 @@
   min-height: 624px;
   height: 100%;
   background-image: url("/advantages/background.png");
+  background-color: var(--white);
   background-repeat: no-repeat;
   background-position: bottom right;
   position: relative;
+}
+
+.advantages-lawyer h2 {
+  text-align: center;
 }
 
 .wrapper-blocks {
