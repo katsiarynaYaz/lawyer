@@ -14,7 +14,7 @@
   max-width: 510px;
 }
 
-.our-team {
+.specialists-our-team {
   margin-bottom: 40px;
   padding-top: 26px;
 }
@@ -24,7 +24,7 @@
   margin-bottom: 40px;
 }
 
-.cards-specialist {
+.specialist-cards {
   display: grid;
   grid-template-columns: repeat(4, 230px);
   grid-template-rows: 382px;
@@ -32,13 +32,13 @@
   overflow-x: auto;
 }
 
-.card-specialist {
+.specialist-card {
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
 
-.cards-specialist img {
+.specialist-cards img {
   background-color: rgba(164, 131, 78, 1);
   height: 312px;
   object-fit: none;
