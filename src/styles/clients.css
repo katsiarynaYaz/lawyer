@@ -1,0 +1,83 @@
+.clients {
+  min-height: 480px;
+  height: 100%;
+
+  background-image: linear-gradient(rgba(35, 34, 40, 0.91)),
+    url("/clients/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  position: relative;
+  overflow: hidden;
+}
+
+.clients h2 {
+  color: var(--white);
+  text-align: center;
+}
+
+.clients-container {
+  width: 100%;
+}
+
+.clients-container::before,
+.clients-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.clients-container::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(35, 34, 40, 1), transparent);
+}
+
+.clients-container::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(35, 34, 40, 1), transparent);
+}
+
+
+.clients-wrapper {
+  display: flex;
+  gap: 16px;
+  width: max-content;
+  animation: clients-scroll 10s linear infinite;
+}
+
+.clients-block {
+  border: 1px solid rgba(217, 217, 217, 0.13);
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  padding: 40px 24px;
+}
+
+.client {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+@keyframes clients-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-50%));
+  }
+}
+
+/* Пауза при наведении */
+.clients-container:hover .clients-wrapper {
+  animation-play-state: paused;
+}
