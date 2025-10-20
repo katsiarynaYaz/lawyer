@@ -3,7 +3,7 @@
   height: 100%;
 
   background-image: linear-gradient(rgba(35, 34, 40, 0.91)),
-    url("/clients/background-columns.jpg");
+    url("/clients/background.jpg");
   background-repeat: no-repeat;
   background-size: cover;
 
@@ -18,8 +18,29 @@
 
 .clients-container {
   width: 100%;
-  overflow: hidden;
 }
+
+.clients-container::before,
+.clients-container::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  height: 100%;
+  width: 400px;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.clients-container::before {
+  left: 0;
+  background: linear-gradient(90deg, rgba(35, 34, 40, 1), transparent);
+}
+
+.clients-container::after {
+  right: 0;
+  background: linear-gradient(270deg, rgba(35, 34, 40, 1), transparent);
+}
+
 
 .clients-wrapper {
   display: flex;
@@ -35,7 +56,6 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  flex-wrap: wrap;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
@@ -54,7 +74,7 @@
     transform: translateX(0);
   }
   100% {
-    transform: translateX(calc(-200px * 6 - 16px * 6));
+    transform: translateX(calc(-50%));
   }
 }
 
