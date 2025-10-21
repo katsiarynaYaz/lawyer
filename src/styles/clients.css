@@ -1,6 +1,7 @@
 .clients {
   min-height: 480px;
   height: 100%;
+  padding-top: 80px;
 
   background-image: linear-gradient(rgba(35, 34, 40, 0.91)),
     url("/clients/background.jpg");
@@ -22,7 +23,7 @@
 
 .clients-container::before,
 .clients-container::after {
-  content: '';
+  content: "";
   position: absolute;
   top: 0;
   height: 100%;
@@ -40,7 +41,6 @@
   right: 0;
   background: linear-gradient(270deg, rgba(35, 34, 40, 1), transparent);
 }
-
 
 .clients-wrapper {
   display: flex;
