@@ -1,0 +1,133 @@
+.reviews {
+  min-height: 746px;
+  height: 100%;
+  padding: 80px 70px;
+}
+
+.reviews h2 {
+  text-align: center;
+}
+
+.reviews-container {
+  height: 506px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+
+/*СТРЕЛКИ*/
+.arrow {
+  background-color: var(--dark-yellow);
+  padding: 12px;
+}
+
+.arrow-right {
+  background-color: var(--dark-yellow);
+  rotate: 180deg;
+}
+
+.review-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.rectangle-bottom {
+  border: 1px solid var(--dark-yellow);
+  width: 898px;
+  height: 186px;
+  margin-top: 70px;
+  z-index: 1;
+}
+
+.rectangle-top {
+  background-color: var(--white);
+  position: relative;
+  z-index: 2;
+  text-align: center;
+
+  margin-top: -255px;
+  padding: 80px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.avatar {
+  width: 108px;
+  height: 108px;
+  border-radius: 100%;
+  border: 8px solid rgba(246, 244, 245, 1);
+  object-fit: cover;
+  filter: grayscale(100%);
+
+  position: absolute;
+  top: -54px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.review {
+  max-width: 688px;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0.02em;
+  margin-inline: auto;
+  font-style: italic;
+}
+
+/*КАВЫЧКИ*/
+.quote-1 {
+  z-index: 3;
+  position: absolute;
+  bottom: -15px;
+  left: 50px;
+}
+
+.quote-2 {
+  z-index: 3;
+  position: absolute;
+  rotate: 180deg;
+  top:  -15px;
+  right: 50px;
+}
+
+/*ПАГИНАЦИЯ*/
+.pagination {
+  position: absolute;
+  display: flex;
+  gap: 8px;
+  bottom: 0;
+  left: 46%;
+}
+
+.pagination-1 {
+  width: 22px;
+  height: 22px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  border: 2px solid transparent;
+}
+
+.pagination-1 span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  background: var(--white);
+  border-radius: 100%;
+}
+
+.active {
+  border-color: var(--dark-yellow);
+
+  & > span {
+    background: var(--dark-yellow);
+  }
+}
