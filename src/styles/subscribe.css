@@ -15,9 +15,7 @@
 }
 
 .subscribe-form {
-  max-width: 720px;
-  position: relative;
-  left: 60px;
+    margin-inline: auto ;
 }
 
 .subscribe-email-button {
@@ -32,6 +30,3 @@
   padding-left: 10px;
 }
 
-.subscribe-form label {
-  display: none;
-}
