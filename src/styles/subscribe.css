@@ -1,0 +1,28 @@
+.subscribe {
+  min-height: 380px;
+  height: 100%;
+  padding: 80px 80px;
+  text-align: center;
+}
+
+.subscribe h2 {
+  font-size: 40px;
+}
+
+.subscribe .words {
+  max-width: none;
+  margin-bottom: 44px;
+}
+
+.subscribe-email-button {
+  display: flex;
+  gap: 16px;
+  justify-content: center;
+}
+
+.subscribe-email {
+  width: 500px;
+  height: 44px;
+  border: none;
+  padding-left: 10px;
+}

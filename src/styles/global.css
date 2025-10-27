@@ -11,6 +11,7 @@
 @import url(clients.css);
 @import url(reviews.css);
 @import url(useful.css);
+@import url(subscribe.css);
 
 :root {
   font-family: Montserrat, Arial, sans-serif;
