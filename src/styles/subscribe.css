@@ -1,8 +1,9 @@
 .subscribe {
   min-height: 380px;
   height: 100%;
-  padding: 80px 300px;
+  padding: 80px 80px;
   text-align: center;
+  position: relative
 }
 
 .subscribe h2 {
@@ -14,13 +15,10 @@
   margin-bottom: 44px;
 }
 
-.subscribe-form {
-    margin-inline: auto ;
-}
-
 .subscribe-email-button {
   display: flex;
   gap: 16px;
+  justify-content: center;
 }
 
 .subscribe-email {
@@ -29,4 +27,3 @@
   border: none;
   padding-left: 10px;
 }
-
