@@ -1,0 +1,85 @@
+footer {
+  height: 552px;
+  position: relative;
+}
+
+footer:before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  background-image: linear-gradient(rgba(35, 34, 40, 0.91)),
+    url("/footer/background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  transform: scaleX(-1);
+}
+
+footer h2 {
+  font-size: 36px;
+  color: var(--white);
+}
+
+.footer-flex {
+  display: flex;
+}
+
+.footer-content-flex {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 70px 90px 70px 72px;
+}
+
+.footer-map {
+  width: 682px;
+  height: 488px;
+  position: relative;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  filter: grayscale(100%);
+}
+
+.colored-map {
+  width: 100%;
+  height: 100%;
+  background-color: rgba(35, 34, 40, 0.56);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.info-flex {
+  display: grid;
+  grid-template-columns: 76px 194px 58px 100px;
+  gap: 32px 22px;
+}
+
+.rights {
+  height: 64px;
+  text-align: center;
+  color: rgba(93, 93, 93, 1);
+  font-weight: 300;
+  font-size: 12px;
+  letter-spacing: 0.02em;
+  background-color: rgba(246, 244, 245, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer .consultation {
+  margin-bottom: 0;
+}
+
+.footer-label {
+  color: var(--white);
+  display: block;
+  text-transform: uppercase;
+}
