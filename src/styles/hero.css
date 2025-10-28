@@ -33,7 +33,9 @@ header a:hover:not(.phone) {
   border-bottom: 2px solid var(--light-yellow);
 }
 
-.phone {
+.phone,
+.mail,
+.address {
   color: var(--light-yellow);
   cursor: pointer;
 }
@@ -76,6 +78,7 @@ header a:hover:not(.phone) {
   height: 44px;
   border: none;
   gap: 8px;
+  padding-left: 10px;
 }
 
 .consultation .button {
