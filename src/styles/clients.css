@@ -15,6 +15,7 @@
 .clients h2 {
   color: var(--white);
   text-align: center;
+  margin-bottom: 20px;
 }
 
 .clients-container {
