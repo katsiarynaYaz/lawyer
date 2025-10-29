@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <main>
-        <section class="hero">
+        <section class="hero" id="main">
           <header>
             <img src="/icon.svg" alt="Логотип компании" />
             <nav>
@@ -94,7 +94,7 @@
           </div>
         </section>
 
-        <section class="advantages-lawyer">
+        <section class="advantages-lawyer" id="services">
           <hgroup>
             <p class="subtitle">Наши преимущества</p>
             <h2>Почему <span class="accent-title">выбирают</span> нас</h2>
@@ -140,7 +140,7 @@
           <button class="button" type="button">Заказать звонок</button>
         </section>
 
-        <section class="specialists">
+        <section class="specialists" id="support">
           <div class="specialists-abilities">
             <hgroup class="specialists-our-team">
               <p class="subtitle-with-text">Наша команда</p>
@@ -278,7 +278,7 @@
           </div>
         </section>
 
-        <section class="reviews">
+        <section class="reviews" id="about">
           <hgroup>
             <p class="subtitle">О нас говорят</p>
             <h2><span class="accent-title">Отзывы</span> наших клиентов</h2>
@@ -334,7 +334,7 @@
             />
           </div>
         </section>
-        <section class="useful">
+        <section class="useful" id="useful">
           <hgroup>
             <p class="subtitle-with-text">Наш блог</p>
             <h2><span class="accent-title">Полезно</span> знать</h2>
@@ -394,7 +394,7 @@
           </div>
         </section>
 
-        <section class="subscribe">
+        <section class="subscribe" id="contacts">
           <hgroup>
             <p class="subtitle">Будьте в курсе</p>
             <h2>
@@ -459,6 +459,30 @@
 
         <span class="rights">© Все права защищены 2023</span>
       </footer>
+
+      <div class="modal">
+        <div class="modal-content">
+          <h2>
+            Оставьте заявку<br><span class="accent-title">мы с вами свяжемся</span>
+          </h2>
+
+          <form class="modal-appliction">
+            <label>
+              <input name="name" class="modal-name" placeholder="Ваше имя"
+            /></label>
+            <label>
+              <input
+                name="phone"
+                class="modal-phone"
+                placeholder="+7 (___) ___ __ __"
+            /></label>
+            <label>
+              <input name="email" class="modal-email" placeholder="Ваш e-mail"
+            /></label>
+            <button class="button-send" type="button">Отправить</button>
+          </form>
+        </div>
+      </div>
     </div>
   </body>
 </html>
