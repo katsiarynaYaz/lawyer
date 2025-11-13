@@ -10,6 +10,7 @@
   background-color: var(--white);
   padding: 24px;
 }
+
 .modal h2 {
   width: 582px;
   text-align: center;
@@ -49,6 +50,36 @@
   color: var(--black);
 }
 
-body:hover .modal {
+/* крестик */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 28px;
+  color: var(--dark-yellow);
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--black);
+}
+
+/* затемнение фона */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+/* активные состояния */
+.modal.active,
+.modal-overlay.active {
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
