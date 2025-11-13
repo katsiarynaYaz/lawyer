@@ -13,6 +13,7 @@
 @import url(useful.css);
 @import url(subscribe.css);
 @import url(footer.css);
+@import url(modal.css);
 
 :root {
   font-family: Montserrat, Arial, sans-serif;
@@ -25,10 +26,13 @@
   --black: rgba(35, 34, 40, 1);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   height: 100vh;
   background-color: rgba(246, 244, 245, 1);
-
 }
 
 h1 {
@@ -57,4 +61,12 @@ h2 {
   border: 1px solid var(--light-yellow);
   text-transform: uppercase;
   color: var(--black);
+}
+
+#services,
+#support,
+#useful,
+#about,
+#contacts {
+  scroll-margin-top: 100px;
 }
