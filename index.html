@@ -14,7 +14,7 @@
   <body>
     <div class="container">
       <main>
-        <section class="hero">
+        <section id="main" class="hero">
           <header>
             <img src="/icon.svg" alt="Логотип компании" />
             <nav>
@@ -49,7 +49,7 @@
                   class="enter-phone-number"
                   placeholder="+7 (___) ___ __ __"
                 />
-                <button class="button" type="button">Заказать звонок</button>
+                <button class="button" type="button" data-modal-open="true">Заказать звонок</button>
               </div>
             </form>
 
@@ -94,7 +94,7 @@
           </div>
         </section>
 
-        <section class="advantages-lawyer">
+        <section id="services" class="advantages-lawyer">
           <hgroup>
             <p class="subtitle">Наши преимущества</p>
             <h2>Почему <span class="accent-title">выбирают</span> нас</h2>
@@ -137,10 +137,12 @@
               </p>
             </div>
           </div>
-          <button class="button" type="button">Заказать звонок</button>
+          <button class="button" type="button" data-modal-open="true">
+            Заказать звонок
+          </button>
         </section>
 
-        <section class="specialists">
+        <section id="support" class="specialists">
           <div class="specialists-abilities">
             <hgroup class="specialists-our-team">
               <p class="subtitle-with-text">Наша команда</p>
@@ -155,7 +157,9 @@
               арбитраже, третейском суде, приму участие в переговорах.
             </p>
 
-            <button class="button" type="button">Заказать звонок</button>
+            <button class="button" type="button" data-modal-open="true">
+              Заказать звонок
+            </button>
           </div>
 
           <div class="specialist-cards">
@@ -278,7 +282,7 @@
           </div>
         </section>
 
-        <section class="reviews">
+        <section id="about" class="reviews">
           <hgroup>
             <p class="subtitle">О нас говорят</p>
             <h2><span class="accent-title">Отзывы</span> наших клиентов</h2>
@@ -291,20 +295,15 @@
               class="arrow"
             />
 
-            <div class="review-card">
+            <div class="review-card active">
               <div class="rectangle-bottom"></div>
               <div class="rectangle-top">
                 <img src="/reviews/avatar.png" alt="Аватар" class="avatar" />
                 <img src="/reviews/quote.png" alt="Кавычки" class="quote-1" />
                 <img src="/reviews/quote.png" alt="Кавычки" class="quote-2" />
-
                 <p class="review">
-                  Я обеспечу представление Ваших интересов в судах общей
-                  юрисдикции, арбитраже, третейском суде, приму участие в
-                  переговорах, окажу помощь<br />на стадии досудебного
-                  урегулирования споров.
+                  Я обеспечу представление Ваших интересов в судах общей юрисдикции, арбитраже, третейском суде, приму участие в переговорах, окажу помощь на стадии досудебного урегулирования споров.
                 </p>
-
                 <hgroup class="review-author">
                   <h3 class="name">Юлия Воробьева</h3>
                   <p class="inscription">Директор компании "Воробьева и ко"</p>
@@ -312,19 +311,42 @@
               </div>
             </div>
 
+            <div class="review-card">
+              <div class="rectangle-bottom"></div>
+              <div class="rectangle-top">
+                <img src="/reviews/avatar.png" alt="Аватар" class="avatar" />
+                <img src="/reviews/quote.png" alt="Кавычки" class="quote-1" />
+                <img src="/reviews/quote.png" alt="Кавычки" class="quote-2" />
+                <p class="review">
+                  Отличный сервис, всё быстро и профессионально!
+                </p>
+                <hgroup class="review-author">
+                  <h3 class="name">Иван Петров</h3>
+                  <p class="inscription">Руководитель ООО “Профи”</p>
+                </hgroup>
+              </div>
+            </div>
+
+            <div class="review-card">
+              <div class="rectangle-bottom"></div>
+              <div class="rectangle-top">
+                <img src="/reviews/avatar.png" alt="Аватар" class="avatar" />
+                <img src="/reviews/quote.png" alt="Кавычки" class="quote-1" />
+                <img src="/reviews/quote.png" alt="Кавычки" class="quote-2" />
+                <p class="review">
+                  Юристы помогли мне выиграть сложное дело.
+                </p>
+                <hgroup class="review-author">
+                  <h3 class="name">Марина Кузнецова</h3>
+                  <p class="inscription">Частный предприниматель</p>
+                </hgroup>
+              </div>
+            </div>
+
             <div class="pagination">
-              <div class="pagination-1">
-                <span></span>
-              </div>
-              <div class="pagination-1 active">
-                <span></span>
-              </div>
-              <div class="pagination-1">
-                <span></span>
-              </div>
-              <div class="pagination-1">
-                <span></span>
-              </div>
+              <div class="pagination-1 active"><span></span></div>
+              <div class="pagination-1"><span></span></div>
+              <div class="pagination-1"><span></span></div>
             </div>
 
             <img
@@ -334,7 +356,7 @@
             />
           </div>
         </section>
-        <section class="useful">
+        <section id="useful" class="useful">
           <hgroup>
             <p class="subtitle-with-text">Наш блог</p>
             <h2><span class="accent-title">Полезно</span> знать</h2>
@@ -394,7 +416,7 @@
           </div>
         </section>
 
-        <section class="subscribe">
+        <section id="contacts" class="subscribe">
           <hgroup>
             <p class="subtitle">Будьте в курсе</p>
             <h2>
@@ -451,7 +473,7 @@
                   class="enter-phone-number"
                   placeholder="+7 (___) ___ __ __"
                 />
-                <button class="button" type="button">Заказать звонок</button>
+                <button class="button" type="button" data-modal-open="true">Заказать звонок</button>
               </div>
             </form>
           </div>
@@ -459,6 +481,36 @@
 
         <span class="rights">© Все права защищены 2023</span>
       </footer>
+
+      <div class="modal-overlay"></div>
+      <div class="modal" data-modal>
+        <div class="modal-content">
+          <span class="close">&times;</span>
+          <!-- вот эта строка -->
+          <h2>
+            Оставьте заявку<br /><span class="accent-title"
+              >мы с вами свяжемся</span
+            >
+          </h2>
+
+          <form class="modal-application">
+            <label>
+              <input name="name" class="modal-name" placeholder="Ваше имя"
+            /></label>
+            <label>
+              <input
+                name="phone"
+                class="modal-phone"
+                placeholder="+7 (___) ___ __ __"
+            /></label>
+            <label>
+              <input name="email" class="modal-email" placeholder="Ваш e-mail"
+            /></label>
+            <button class="button-send" type="button">Отправить</button>
+          </form>
+        </div>
+      </div>
     </div>
+    <script src="/src/index.js"></script>
   </body>
 </html>

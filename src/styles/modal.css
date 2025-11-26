@@ -1,0 +1,85 @@
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  height: 546px;
+  width: 964px;
+  background-color: var(--white);
+  padding: 24px;
+}
+
+.modal h2 {
+  width: 582px;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.modal-content {
+  height: 100%;
+  width: 100%;
+  border: 1px solid var(--dark-yellow);
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.modal-application {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 24px;
+}
+
+.modal-application input {
+  width: 534px;
+  height: 44px;
+  padding-left: 10px;
+  border: 1px solid var(--card-border);
+}
+
+.button-send {
+  width: 200px;
+  height: 44px;
+  border: 1px solid var(--light-yellow);
+  text-transform: uppercase;
+  color: var(--black);
+}
+
+/* крестик */
+.close {
+  position: absolute;
+  top: 30px;
+  right: 40px;
+  font-size: 28px;
+  color: var(--dark-yellow);
+  cursor: pointer;
+}
+
+.close:hover {
+  color: var(--black);
+}
+
+/* затемнение фона */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: 999;
+}
+
+/* активные состояния */
+.modal.active,
+.modal-overlay.active {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
