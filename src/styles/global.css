@@ -62,11 +62,3 @@ h2 {
   text-transform: uppercase;
   color: var(--black);
 }
-
-#services,
-#support,
-#useful,
-#about,
-#contacts {
-  scroll-margin-top: 100px;
-}
